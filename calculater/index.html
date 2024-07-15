@@ -1,0 +1,87 @@
+<html>
+ <head> 
+    <style>
+        .div{
+ border:2px solid;
+ height:410px;
+ width:300px;
+margin-left: 40%;
+margin-top: 100px;
+background-color:rgb(143, 175, 149);
+border-radius: 10px;
+box-shadow: 5px 5px;
+
+
+}
+.inp{
+    width:295px;
+    height:52px;
+    background-color:aliceblue(148, 151, 131, 0.164);
+    font-size: large;
+    border-radius: 8px;
+    margin-top: 2px;
+    box-shadow: 5px 5px;
+    
+
+    
+}
+.btn{
+    width: 60px;
+    height:60px;
+     margin-top:10px; 
+     padding:5px;
+     margin-left: 10px;
+     border-radius: 7px;
+     box-shadow: 5px 5px;   
+     background-color:antiquewhite; 
+     text-shadow:100px;
+    
+
+}
+:hover.btn{
+    background-color:rgb(7, 255, 243);
+}
+.btn2{
+    background-color:rgb(247, 85, 10 );
+}
+    </style>
+ </head>
+ <body>
+    <form>
+        <div class="div">
+                <div>
+                    <input type="text" name="display" class="inp">
+                </div>
+                        <input type="button" value="AC" onClick="display.value=''"class="btn btn2">
+                        <input type="button" value="DE" onClick="display.value=display.value.toString().slice(0,-1)"class="btn btn2">
+                        <input type="button" value="/" onClick="display.value+='/'"class="btn btn2">
+                        <input type="button" value="%" onClick="display.value+='%'"class="btn btn2">
+                        <br>
+                    
+                        <input type="button" value="7" onClick="display.value+='7'"class="btn">
+                        <input type="button" value="8" onClick="display.value+='8'"class="btn">
+                        <input type="button" value="9" onClick="display.value+='9'"class="btn">
+                        <input type="button" value="*" onClick="display.value+='*'"class="btn btn2">
+                
+                        <br>
+                        <input type="button" value="4" onClick="display.value+='4'"class="btn">
+                        <input type="button" value="5" onClick="display.value+='5'"class="btn">
+                        <input type="button" value="6" onClick="display.value+='6'"class="btn">
+                        <input type="button" value="-" onClick="display.value+='-'"class="btn btn2">
+                        <br>
+                    
+                        <input type="button" value="1" onClick="display.value+='1'"class="btn">
+                        <input type="button" value="2" onClick="display.value+='2'"class="btn">
+                        <input type="button" value="3" onClick="display.value+='3'"class="btn">
+                        <input type="button" value="+" onClick="display.value+='+'"class="btn btn2">
+                        <br>
+                    
+                        <input type="button" value="00" onClick="display.value+='00'"class="btn">
+                        <input type="button" value="0" onClick="display.value+='0'"class="btn">
+                        <input type="button" value="." onClick="display.value+='.'"class="btn">
+                        <input type="button" value="=" onClick="display.value=eval(display.value)"class="btn btn2">
+                
+        </div>
+</form>
+ </body>
+</html>
